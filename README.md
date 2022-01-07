@@ -12,8 +12,7 @@ stepik.yandexcouse.solution
 
 
 
-<code>
-
+<code
               ,.ood888888888888boo.,
               .od888P^""            ""^Y888bo.                                
           .od8P''   ..oood88888888booo.    ``Y8bo.
@@ -34,6 +33,4 @@ stepik.yandexcouse.solution
        `^Yb.,  `^^Y8888888888888888888888P^^'  ,.dP^'
           `^Y8b..   ``^^^Y88888888P^^^'    ..d8P^'
               `^Y888bo.,            ,.od888P^'
-                   "`^^Y888888888888P^^'"
-  
-  </code>
+                   "`^^Y888888888888P^^'" /code>
