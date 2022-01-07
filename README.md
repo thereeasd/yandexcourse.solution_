@@ -1,6 +1,19 @@
 # yandexcourse.solution_
 stepik.yandexcouse.solution
 Прохожу курс на степике, декларирую свои решению яки настоящий программист используя git и github
+
+
+
+
+
+
+
+
+
+
+
+<code>
+
               ,.ood888888888888boo.,
               .od888P^""            ""^Y888bo.                                
           .od8P''   ..oood88888888booo.    ``Y8bo.
@@ -22,3 +35,5 @@ stepik.yandexcouse.solution
           `^Y8b..   ``^^^Y88888888P^^^'    ..d8P^'
               `^Y888bo.,            ,.od888P^'
                    "`^^Y888888888888P^^'"
+  
+  </code>
