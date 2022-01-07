@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 	int N, M, K;
 	cin >> N >> M >> K;
-	if ((N * M) > K && ((K % M) == 0 || (K % N) == 0))
+	if (K < N * M && ((K % N == 00) || (K % M==0)))
 	{
 		cout << "YES";
 	}
