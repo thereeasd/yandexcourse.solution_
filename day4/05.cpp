@@ -1,48 +1,42 @@
 /*
-Определите среднее значение всех элементов последовательности, завершающейся числом 0.
+Процентная ставка по вкладу составляет P процентов годовых, которые прибавляются к сумме вклада в конце года. Вклад составляет X рублей Y копеек. Определите размер вклада через год.
+
+
+При решении этой задачи нельзя пользоваться условными инструкциями и циклами.
 
 Формат входных данных
-
-Вводится последовательность целых чисел, оканчивающаяся числом 0 (само число 0 в последовательность не входит, а служит как признак ее окончания).
+Программа получает на вход целые числа P, X, Y.
 Формат выходных данных
-Выведите ответ на задачу.
+Программа должна вывести два числа: величину вклада через год в рублях и копейках. Дробная часть копеек отбрасывается.
 Sample Input:
 
-1
-7
-9
+12
+179
 0
 Sample Output:
 
-5.66666666667
+200 48
 */
 #include <iostream>
-#include <iomanip>
 using namespace std;
 int main() {
-	int number, count = 0;
-	double sum = 0; //, average;
-	while (cin >> number && number != 0) {
-		sum += number;
-		count++;
-	}
-	cout << setprecision(11) << (double)sum / count;  //average = sum / count;
-	//cout << (double) average;
+	int p, x, y;
+	cin >> p >> x >> y;
+	int result = x * p + y * p / 100 + x * 100 + y;
+	cout << result / 100 << ' ' << result % 100;
 	return 0;
 }
 /*
-Failed test #1 of 9. Wrong answer
-
-This is a sample test from the problem statement!
-
-Test input:
-1
-7
-9
-0
-Correct output:
-5.66666666667
-
-Your code output:
-5.66667
-*/
+#include <cmath>
+int main() {
+	int p, x, y;
+	double temp1, temp2, final;
+	cin >> p >> x >> y;
+	temp1 = y;
+	temp1 = temp1 / 100;
+	temp2 = (x + temp1) + (x + temp1) * p / 100;
+	x = floor(temp2);
+	y = (temp2 - x) * 100;  // значение уменьшается на единичку почему то хз решение не принимается надо разобраться
+	cout << x << " " << y;
+	return 0;
+}*/
