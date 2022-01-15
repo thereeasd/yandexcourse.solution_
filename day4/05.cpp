@@ -17,6 +17,7 @@ Sample Output:
 5.66666666667
 */
 #include <iostream>
+#include <iomanip>
 using namespace std;
 int main() {
 	int number, count = 0;
@@ -25,11 +26,10 @@ int main() {
 		sum += number;
 		count++;
 	}
-	cout << (double)sum / count;  // average = sum / count;
+	cout << setprecision(11) << (double)sum / count;  //average = sum / count;
 	//cout << (double) average;
 	return 0;
 }
-
 /*
 Failed test #1 of 9. Wrong answer
 
